@@ -30,11 +30,15 @@
 * **теги релизов:** `v1.0` и `v1.1`
 * минимум **1 Pull Request**
 
+Дополнительное требование:
+
+* **каждый участник команды должен сделать как минимум 2 коммита** в репозиторий.
+
 ---
 
 # Пример структуры проекта
 
-```id="st3l4q"
+```id="b4gy0f"
 my_project/
 │
 ├── main.py
@@ -51,7 +55,7 @@ my_project/
 
 Инициализация проекта:
 
-```bash id="g0y6nb"
+```bash id="vqgfdm"
 git init
 git add .
 git commit -m "Initial project structure"
@@ -59,20 +63,20 @@ git commit -m "Initial project structure"
 
 Создание рабочей ветки:
 
-```bash id="0z5t8r"
+```bash id="gqsn3n"
 git checkout -b feature/my-feature
 ```
 
 Коммиты:
 
-```bash id="r6a3o6"
+```bash id="8xap5q"
 git add .
 git commit -m "Add feature"
 ```
 
 Отправка изменений:
 
-```bash id="l3p3cs"
+```bash id="o3a4zy"
 git push -u origin feature/my-feature
 ```
 
@@ -84,12 +88,12 @@ git push -u origin feature/my-feature
 
 Создание релизов:
 
-```bash id="n2o6az"
+```bash id="fxye33"
 git tag -a v1.0 -m "First release"
 git push origin v1.0
 ```
 
-```bash id="u6d2lu"
+```bash id="yo9ztn"
 git tag -a v1.1 -m "Improvements"
 git push origin v1.1
 ```
@@ -100,19 +104,19 @@ git push origin v1.1
 
 Создание виртуального окружения:
 
-```bash id="e6j6df"
+```bash id="lbe80j"
 python -m venv venv
 ```
 
 Установка пакета:
 
-```bash id="pfv63t"
+```bash id="1n6o45"
 pip install requests
 ```
 
 Сохранение зависимостей:
 
-```bash id="zpxy4f"
+```bash id="8f9j1f"
 pip freeze > requirements.txt
 ```
 
@@ -127,7 +131,7 @@ pip freeze > requirements.txt
 * Bitbucket
 * https://gitflic.ru/
 
-Главное требование — чтобы проект поддерживал **Git, ветки, Pull Request (или Merge Request) и теги**.
+Главное требование — чтобы платформа поддерживала **Git, ветки, Pull Request (или Merge Request) и теги**.
 
 ---
 
@@ -136,6 +140,18 @@ pip freeze > requirements.txt
 1. Ссылка на **репозиторий проекта**
 2. Вывод команды:
 
-```bash id="p6w0yz"
+```bash id="dmux1l"
 git log --oneline --graph --all
 ```
+
+---
+
+# Презентация проекта
+
+На следующем лабораторном занятии каждая команда должна **кратко представить свой проект**:
+
+* показать репозиторий
+* объяснить структуру проекта
+* продемонстрировать работу программы
+* рассказать, как использовались ветки и Pull Request
+* кратко описать вклад каждого участника команды
